@@ -61,6 +61,24 @@
     text-decoration: underline;
 }
 
+.status {
+    width: fit-content;
+    padding: 2px 8px;
+    border-radius: 50px;
+}
+
+.status.success {
+    color: #29934F;
+    background-color: #29935027;
+    border: 1px solid #29934F;
+}
+
+.status.error {
+    color: #B23737;
+    background-color: #B2373727;
+    border: 1px solid #B23737;
+}
+
 @media (max-width: 600px) {
     .page {
         width: 95vw;

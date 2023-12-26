@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import OtpTemplate from "../pages/OtpTemplate";
 import OtpInput from "../pages/OtpInput";
+import PasswordChecker from "../pages/PasswordChecker";
 
 const router = createBrowserRouter([
     {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     {
         path: "/otp-input",
         element: <OtpInput />,
+    },
+    {
+        path: "/password-validator",
+        element: <PasswordChecker />
     }
 ]);
 

@@ -7,18 +7,27 @@ export default function Home() {
         {
             heading: "OTP Email Template",
             link: "/otp-email-temp",
+            working: true,
         },
         {
             heading: "OTP Input Boxes",
             link: "/otp-input",
+            working: true,
+        },
+        {
+            heading: "Password Validator",
+            link: "/password-validator",
+            working: true,
         },
         {
             heading: "API Key Authentication",
             link: "/api-key-auth",
+            working: false,
         },
         {
             heading: "Mobile Authnetication",
             link: "/mobile-auth",
+            working: false,
         }
     ];
     return (
@@ -29,6 +38,11 @@ export default function Home() {
                 <div className="grid">
                     {gridItems.map((item) => (
                         <div className="grid-box">
+                            <div 
+                                className={`status ${item.working ? "success" : "error"}`}
+                            >
+                                {item.working ? "New" : "Coming Soon"}
+                            </div>
                             <h3>{item.heading}</h3>
                             <div className="grid-link cur" onClick={() => { window.scrollTo(0, 0); navigate(item.link) }}>View</div>
                         </div>
