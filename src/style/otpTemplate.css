@@ -1,0 +1,32 @@
+.otp-box {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10%;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+}
+
+.otp-div {
+    background-color: #caf4ff;
+    padding: 10px;
+    margin-block: 20px;
+    font-weight: 600;
+}
+
+.body-text {
+    font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+    .otp-box {
+        width: 100%;
+        padding: 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .otp-box {
+        width: 95vw;
+        font-size: 16px;
+    }
+}
