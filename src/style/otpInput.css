@@ -1,0 +1,24 @@
+.otp-input-box {
+    display: flex;
+    margin-block: 20px;
+    justify-content: center;
+}
+
+.otp-input {
+    width: 50px;
+    font-size: 32px;
+    padding: 10px;
+    margin: 4px;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    outline: none;
+    transition: all 200ms ease;
+}
+
+.otp-input:focus {
+    border: 2px solid var(--black-light);
+}
+
+.margin-right-20 {
+    margin-right: 20px;
+}
